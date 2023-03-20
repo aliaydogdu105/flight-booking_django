@@ -21,14 +21,15 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 schema_view = get_schema_view(
     openapi.Info(
-    title="Flight Reservation API", 
-    default_version="v1",
-    description="Flight Reservation API project provides flight and reservation info",
-    terms_of_service="#", 
-    contact=openapi.Contact(email="rafe@clarusway.com"), # Change e-mail on this line!
-    license=openapi.License(name="BSD License"),),
-    public=True, 
-    permission_classes=[permissions.AllowAny],
+        title="Flight Reservation API", 
+        default_version="v1",
+        description="Flight Reservation API project provides flight and reservation info",
+        terms_of_service="#", 
+        contact=openapi.Contact(email="rafe@clarusway.com"), # Change e-mail on this line!
+        license=openapi.License(name="BSD License"),
+        ),
+        public=True, 
+        permission_classes=[permissions.AllowAny],
     )
 urlpatterns = [
     path("admin/", admin.site.urls),
